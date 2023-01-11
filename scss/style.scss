@@ -1,0 +1,35 @@
+// @import 'font';
+
+// rem converter
+$html-font-size: 16px;
+
+@function stripUnit($value) {
+    @return $value / ($value * 0 + 1);
+}
+
+@function rem($pxValue) {
+    @return #{stripUnit($pxValue) / stripUnit($html-font-size)}rem;
+}
+
+// Colors
+
+$gray: #DEDEDE;
+$black: #202020;
+$red: #ED413E;
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: rem(16px);
+    font-weight: 400;
+    background-color: $gray;
+    color: $black;
+}
+a {
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    text-decoration: none;
+}
+main {
+    width:100vw;
+    height: 100vh;  
+}

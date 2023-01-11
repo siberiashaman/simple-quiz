@@ -1,0 +1,17 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: #DEDEDE;
+  color: #202020;
+}
+
+a {
+  transition: all 0.4s ease;
+  text-decoration: none;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+}
